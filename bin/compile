@@ -27,8 +27,8 @@ fi
 echo "-----> Installing dependencies"
 cpanm --installdeps . 2>&1 | indent
 
-echo "-----> Installing Starman"
-cpanm Starman 2>&1 | indent
+echo "-----> Installing Mojolicious"
+cpanm mojolicious 2>&1 | indent
 
 if [ -d $BUILD_DIR/local ]; then
   rm -rf $CACHE_DIR/local

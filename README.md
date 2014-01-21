@@ -1,7 +1,7 @@
 Heroku buildpack: Perl
 ======================
 
-This is a Heroku buildpack that runs any PSGI based web applications using Starman.
+This is a Heroku buildpack that runs any Mojolicious based web applications using Hypnotoad.
 
 Usage
 -----
@@ -10,7 +10,7 @@ Example usage:
 
     $ ls
     cpanfile
-    app.psgi
+    app.json
     lib/
 
     $ cat cpanfile
@@ -23,7 +23,7 @@ Example usage:
     ...
     -----> Heroku receiving push
     -----> Fetching custom buildpack
-    -----> Perl/PSGI app detected
+    -----> Perl/Mojo app detected
     -----> Installing dependencies
 
 The buildpack will detect that your app has an `app.psgi` in the root.
@@ -32,4 +32,3 @@ Libraries
 ---------
 
 Dependencies can be declared using `cpanfile` (recommended) or more traditional `Makefile.PL`, `Build.PL` and `META.json` (whichever you can install with `cpanm --installdeps`), and the buildpack will install these dependencies using [cpanm](http://cpanmin.us) into `./local` directory.
-

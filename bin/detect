@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # this pack is valid for apps with an app.psgi in the root
-if [ -f $1/app.psgi ]; then
-  echo "Perl/PSGI"
+if [ -f $1/mojo ]; then
+  echo "Perl/Mojo"
   exit 0
 else
   exit 1
