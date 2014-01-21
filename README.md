@@ -1,4 +1,4 @@
-Heroku buildpack: Perl
+Heroku buildpack: Mojolicious
 ======================
 
 This is a Heroku buildpack that runs any Mojolicious based web applications using Hypnotoad.
@@ -10,8 +10,15 @@ Example usage:
 
     $ ls
     cpanfile
-    app.json
-    lib/
+    lib
+    log
+    mojo
+    public
+    script
+    t
+    templates
+
+    
 
     $ cat cpanfile
     requires 'Plack', '1.0000';
