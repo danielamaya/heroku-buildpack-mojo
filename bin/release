@@ -2,9 +2,6 @@
 
 cat << EOF
 ---
-addons:
-config_vars:
-  PATH: local/bin:/usr/local/bin:/usr/bin:/bin
 default_process_types:
   web: $PWD/script/konocle daemon --listen http://*:$PORT --mode production
 EOF
