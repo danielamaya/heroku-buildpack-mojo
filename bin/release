@@ -1,5 +1,6 @@
 #!/bin/sh
 cat << EOF
+---
 default_process_types:
-  web: $PWD/script/konocle daemon --listen http://*:$PORT --mode production
+  web: \$PWD/script/konocle daemon --listen http://*:\$PORT --mode production
 EOF
