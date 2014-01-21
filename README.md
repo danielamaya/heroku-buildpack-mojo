@@ -21,8 +21,7 @@ Example usage:
     
 
     $ cat cpanfile
-    requires 'Plack', '1.0000';
-    requires 'DBI', '1.6';
+    requires 'DBIx::Class', '0.08250';
 
     $ heroku create --stack cedar --buildpack https://github.com/miyagawa/heroku-buildpack-perl.git
 
@@ -33,7 +32,7 @@ Example usage:
     -----> Perl/Mojo app detected
     -----> Installing dependencies
 
-The buildpack will detect that your app has an `app.psgi` in the root.
+The buildpack will detect that your app has an empty file named `mojo` in the root.
 
 Libraries
 ---------
